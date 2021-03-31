@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import CoreGraphics
 
 class SwViewController: UIViewController, UIScrollViewDelegate {
     
@@ -44,14 +46,31 @@ class SwViewController: UIViewController, UIScrollViewDelegate {
         self.spinner.startAnimating()
         DispatchQueue.global().async {
             
-            let image1 = UIImage(named:"pano_19_16_mid.jpg")
-            let image2 = UIImage(named:"pano_19_20_mid.jpg")
-            let image3 = UIImage(named:"pano_19_22_mid.jpg")
-            let image4 = UIImage(named:"pano_19_25_mid.jpg")
+            /// Gets all of the frames of the image
+            let splitter = VideoSplitter(urlVideo: URL(fileURLWithPath: Bundle.main.path(forResource: "TestVideo_1", ofType: "mp4")!))
+            splitter.getAllFrames()
             
-            let imageArray:[UIImage?] = [image1,image2,image3,image4]
+            let imageArray: [UIImage?] = [UIImage(named: "test0"), UIImage(named: "frame3")]
             
-            let stitchedImage:UIImage = CVWrapper.process(with: imageArray as! [UIImage]) as UIImage
+//            var imageArray: [UIImage?] = []
+            
+            
+            // This part works and just appends every frame that were captured using a KNN algorithm to imageArray
+//            Array(0...12).forEach { i in
+//                imageArray.append(UIImage(named: "frame\(i)"))
+//            }
+            
+//            splitter.imageFromVideo(at: TimeInterval(1), completion: { img in
+//                imageArray.append(img)
+//            })
+//            splitter.imageFromVideo(at: TimeInterval(3), completion: { image in
+//                imageArray.append(image)
+//            })
+//            imageArray.append(UIImage(named: "frame0"))
+//            imageArray.append(UIImage(named: "frame1"))
+            
+            
+            let stitchedImage: UIImage = CVWrapper.process(with: imageArray as! [UIImage]) as UIImage
             
             DispatchQueue.main.async {
                 NSLog("stichedImage %@", stitchedImage)
@@ -61,7 +80,7 @@ class SwViewController: UIViewController, UIScrollViewDelegate {
                 self.scrollView.backgroundColor = UIColor.black
                 self.scrollView.contentSize = self.imageView!.bounds.size
                 self.scrollView.maximumZoomScale = 4.0
-                self.scrollView.minimumZoomScale = 0.5
+                self.scrollView.minimumZoomScale = 0.001
                 self.scrollView.delegate = self
                 self.scrollView.contentOffset = CGPoint(x: -(self.scrollView.bounds.size.width - self.imageView!.bounds.size.width)/2.0, y: -(self.scrollView.bounds.size.height - self.imageView!.bounds.size.height)/2.0)
                 NSLog("scrollview \(self.scrollView.contentSize)")

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C3F6E63E05C22839367CC78 /* Pods_SwiftStitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604519657C1BE2C9496672A4 /* Pods_SwiftStitch.framework */; };
+		4B3FF5712614A000002C4D4C /* TestVideo_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B3FF5702614A000002C4D4C /* TestVideo_1.mp4 */; };
+		4BD7CCE52611C32E005D24D4 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7CCE42611C32E005D24D4 /* VideoHelper.swift */; };
 		AB7D8E7A193E928E0059EE63 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E79193E928E0059EE63 /* UIImage+OpenCV.mm */; };
 		AB7D8E7D193E92B80059EE63 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E7C193E92B80059EE63 /* CVWrapper.mm */; };
 		AB7D8E80193E92C30059EE63 /* stitching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E7E193E92C30059EE63 /* stitching.cpp */; };
@@ -19,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		082CBAB6CF41A8DCCC8BD7FE /* Pods-SwiftStitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.release.xcconfig"; sourceTree = "<group>"; };
-		604519657C1BE2C9496672A4 /* Pods_SwiftStitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CABB256A5D457E57F46E1EA /* Pods-SwiftStitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.debug.xcconfig"; sourceTree = "<group>"; };
+		490EA1FC8183BDEFDCBC3F89 /* Pods-SwiftStitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.debug.xcconfig"; sourceTree = "<group>"; };
+		4B3FF5702614A000002C4D4C /* TestVideo_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo_1.mp4; sourceTree = "<group>"; };
+		4BD7CCE42611C32E005D24D4 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		6DC3AA4B527FA4FEE0B7D494 /* Pods-SwiftStitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.release.xcconfig"; sourceTree = "<group>"; };
 		AB6D1AEE193F9B6600F8B0F5 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		AB7D8E77193E928D0059EE63 /* SwiftStitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB7D8E78193E928E0059EE63 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
@@ -30,7 +32,6 @@
 		AB7D8E7C193E92B80059EE63 /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
 		AB7D8E7E193E92C30059EE63 /* stitching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stitching.cpp; sourceTree = "<group>"; };
 		AB7D8E7F193E92C30059EE63 /* stitching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stitching.h; sourceTree = "<group>"; };
-		AB7D8E83193F33B40059EE63 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AB896A82193E8E830018B9EC /* SwiftStitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB896A86193E8E830018B9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB896A87193E8E830018B9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3F6E63E05C22839367CC78 /* Pods_SwiftStitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +56,8 @@
 		3A1C470CB266AAEDD4677B08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CABB256A5D457E57F46E1EA /* Pods-SwiftStitch.debug.xcconfig */,
-				082CBAB6CF41A8DCCC8BD7FE /* Pods-SwiftStitch.release.xcconfig */,
+				490EA1FC8183BDEFDCBC3F89 /* Pods-SwiftStitch.debug.xcconfig */,
+				6DC3AA4B527FA4FEE0B7D494 /* Pods-SwiftStitch.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -90,6 +90,8 @@
 				AB7D8E79193E928E0059EE63 /* UIImage+OpenCV.mm */,
 				AB896A87193E8E830018B9EC /* AppDelegate.swift */,
 				AB896A89193E8E830018B9EC /* SwViewController.swift */,
+				4B3FF5702614A000002C4D4C /* TestVideo_1.mp4 */,
+				4BD7CCE42611C32E005D24D4 /* VideoHelper.swift */,
 				AB896A8B193E8E830018B9EC /* Main.storyboard */,
 				AB896A8E193E8E830018B9EC /* Images.xcassets */,
 				AB7D8E7B193E92B80059EE63 /* CVWrapper.h */,
@@ -113,8 +115,6 @@
 		EE5F212F31B24F2C835C369D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB7D8E83193F33B40059EE63 /* libz.dylib */,
-				604519657C1BE2C9496672A4 /* Pods_SwiftStitch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,19 +148,19 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = ellipsis.com;
 				TargetAttributes = {
 					AB896A81193E8E830018B9EC = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 2Y9BM25FS4;
+						DevelopmentTeam = 3XX4XH6B2Z;
 						LastSwiftMigration = 1000;
 					};
 				};
 			};
 			buildConfigurationList = AB896A7D193E8E830018B9EC /* Build configuration list for PBXProject "SwiftStitch" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -181,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3FF5712614A000002C4D4C /* TestVideo_1.mp4 in Resources */,
 				AB896A8D193E8E830018B9EC /* Main.storyboard in Resources */,
 				AB896A8F193E8E830018B9EC /* Images.xcassets in Resources */,
 			);
@@ -220,6 +221,7 @@
 			files = (
 				AB896A8A193E8E830018B9EC /* SwViewController.swift in Sources */,
 				AB7D8E80193E92C30059EE63 /* stitching.cpp in Sources */,
+				4BD7CCE52611C32E005D24D4 /* VideoHelper.swift in Sources */,
 				ABAA668D1BD420BE00BD6A45 /* UIImage+Rotate.m in Sources */,
 				AB7D8E7A193E928E0059EE63 /* UIImage+OpenCV.mm in Sources */,
 				AB7D8E7D193E92B80059EE63 /* CVWrapper.mm in Sources */,
@@ -263,6 +265,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -335,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -346,42 +350,42 @@
 		};
 		AB896A9F193E8E830018B9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CABB256A5D457E57F46E1EA /* Pods-SwiftStitch.debug.xcconfig */;
+			baseConfigurationReference = 490EA1FC8183BDEFDCBC3F89 /* Pods-SwiftStitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2Y9BM25FS4;
+				DEVELOPMENT_TEAM = 3XX4XH6B2Z;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftStitch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopheprat.SwiftStitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStitch/SwiftStitch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		AB896AA0193E8E830018B9EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082CBAB6CF41A8DCCC8BD7FE /* Pods-SwiftStitch.release.xcconfig */;
+			baseConfigurationReference = 6DC3AA4B527FA4FEE0B7D494 /* Pods-SwiftStitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2Y9BM25FS4;
+				DEVELOPMENT_TEAM = 3XX4XH6B2Z;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftStitch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopheprat.SwiftStitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStitch/SwiftStitch-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
